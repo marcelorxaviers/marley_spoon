@@ -5,11 +5,10 @@
   #recipes.flex.flex-wrap.-mx-1.lg:-mx-4
     - @recipes.each do |recipe|
       = render "index_recipe", recipe: recipe
-    / Column
 
   .container.my-12.mx-auto.px-4.md:px-12
+    #no_more_recipes.hidden.bg-orange-100.border-l-4.border-orange-500.text-orange-700.p-4
+      %p.font-bold This is embarrassing, but...
+      %p you did reach the end. We have no other recipes around here. :-|
+    %br
     = link_to('More recipes', recipes_index_path(skip: @recipes.size), remote: true, data: { disable_with: 'loading...' }, 'class' => 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full', id: :more_recipes)
-    #flex.flex-wrap.-mx-1.lg:-mx-4
-      #no_more_recipes.hidden.bg-orange-100.border-l-4.border-orange-500.text-orange-700.p-4
-        %p.font-bold This is embarrassing, but...
-        %p we have no other recipes to present.

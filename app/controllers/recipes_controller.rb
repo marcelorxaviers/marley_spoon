@@ -12,14 +12,14 @@ class RecipesController < ApplicationController
     end
   end
 
+  def show
+    @recipe = Recipe.new(Contentful.client.entry(params[:id]))
+  end
+
 private
 
   def recipes
     options = OPTIONS.merge(skip: params[:skip].to_i)
-    Contentful.client.entries(options).map do |entry|
-      {
-        id: entry.id, title: entry.title, image_src: "https:#{entry.photo.url}"
-      }
-    end
+    Contentful.client.entries(options).map { |entry| Recipe.new(entry) }
   end
 end
