@@ -23,6 +23,6 @@ Metrics/LineLength:
   Exclude:
     - 'bin/*'
 
-Style/ClassAndModuleChildren:
+Metrics/BlockLength:
   Exclude:
-    - 'test/**/*.rb'
+    - 'spec/**/*.rb'

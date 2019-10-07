@@ -10,20 +10,7 @@
 # Configuration parameters: CountComments, ExcludedMethods.
 # ExcludedMethods: refine
 Metrics/BlockLength:
-  Max: 27
-
-# Offense count: 7
-Style/Documentation:
-  Exclude:
-    - 'spec/**/*'
-    - 'test/**/*'
-    - 'marcelo/bot.rb'
-    - 'marcelo/commands/execute_etl.rb'
-    - 'marcelo/commands/explain_revenue.rb'
-    - 'marcelo/commands/generate_kpis.rb'
-    - 'marcelo/commands/get_kpis.rb'
-    - 'marcelo/commands/upsert.rb'
-    - 'marcelo/request.rb'
+  Max: 20
 
 # Offense count: 17
 # Cop supports --auto-correct.
