@@ -13,11 +13,14 @@ Using the command line run:
 
 
 ### Running the specs
-Using the command line enter the marley_spoon folder and run:
+Using the command line - inside marley_spoon folder - run:
   1. `bundle exec rspec -fd`
 
 ### Running the program
-Using the command line enter the marley_spoon folder and run:
+Using the command line inside - marley_spoon folder - run:
   1. `RAILS_SERVE_STATIC_FILES=true RAILS_ENV=production bundle exec rails server`
 
 Then open the [**Marley Spoon Application**](http://localhost:3000/) in your browser
+
+### Plus
+Checkout [**this video**](https://drive.google.com/open?id=16Fmx8Ytpx59EPlZqyKF3rOYCTpv_C6O-) showing how to run this application
