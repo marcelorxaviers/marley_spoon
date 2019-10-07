@@ -18,6 +18,6 @@ Using the command line enter the marley_spoon folder and run:
 
 ### Running the program
 Using the command line enter the marley_spoon folder and run:
-  1. `bundle exec puma -C config/puma.rb`
+  1. `RAILS_SERVE_STATIC_FILES=true RAILS_ENV=production bundle exec rails server`
 
 Then open the [**Marley Spoon Application**](http://localhost:3000/) in your browser
