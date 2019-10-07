@@ -1,0 +1,7 @@
+- if @recipes.size.positive?
+  - @recipes.each do |recipe|
+    - card = escape_javascript render(partial: 'index_recipe', locals: { recipe: recipe });
+    $('#recipes').append("#{card}");
+  $('#more_recipes')[0].href = "#{recipes_index_path}?skip=" + $('.recipe').length
+- else
+  $('#no_more_recipes').show();

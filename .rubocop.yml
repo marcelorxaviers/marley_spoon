@@ -1,0 +1,28 @@
+inherit_from: .rubocop_todo.yml
+
+Layout/AccessModifierIndentation:
+  EnforcedStyle: outdent
+
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - 'bin/*'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'bin/*'
+
+Metrics/PerceivedComplexity:
+  Exclude:
+    - 'bin/*'
+
+Metrics/AbcSize:
+  Exclude:
+    - 'bin/*'
+
+Metrics/LineLength:
+  Exclude:
+    - 'bin/*'
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'test/**/*.rb'
